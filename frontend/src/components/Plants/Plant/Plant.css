@@ -1,0 +1,86 @@
+.Card {
+  display: flex;
+
+  margin: 5rem 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.CardContent {
+  display: flex;
+  flex-direction: column;
+  width: 24%;
+  height: 360px;
+  margin-bottom: 3rem;
+  justify-content: space-between;
+  box-shadow: 0px 0px 1.2px #0a121e;
+}
+
+.CardImage {
+  height: 300px;
+}
+
+.CardDetails {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7.2px;
+}
+
+@media (max-width: 1200px) {
+  .CardContent {
+    width: 30%;
+  }
+}
+
+@media (max-width: 800px) {
+  .CardContent {
+    height: 300px;
+    width: 31%;
+  }
+  .CardImage {
+    height: 260px;
+  }
+}
+
+@media (max-width: 700px) {
+  .Card {
+    margin: 5rem 3rem;
+  }
+  .CardContent {
+    height: 300px;
+    width: 46%;
+  }
+  .CardImage {
+    height: 260px;
+  }
+}
+
+@media (max-width: 550px) {
+  .Card {
+    margin: 5rem 2rem;
+  }
+  .CardContent {
+    /* height: 300px; */
+    width: 47%;
+  }
+}
+@media (max-width: 500px) {
+  .Card {
+    margin: 5rem 1.2rem;
+  }
+  .CardContent {
+    height: 290px;
+  }
+  .CardImage {
+    height: 230px;
+  }
+}
+@media (max-width: 400px) {
+  .CardContent {
+    height: 200px;
+  }
+  .CardImage {
+    height: 160px;
+  }
+}
