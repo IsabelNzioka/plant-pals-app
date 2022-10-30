@@ -1,0 +1,37 @@
+.NavigationItem {
+  margin: 0;
+  /* display: flex; */
+
+  font-size: 1.2rem;
+  /* height: 100%; */
+  width: auto;
+  align-items: center;
+  padding-right: 1.2rem;
+}
+
+.NavigationItem a {
+  color: inherit;
+  text-decoration: none;
+
+  /* display: block; */
+  transition: all 1s;
+}
+
+.NavigationItem a:hover {
+  /* border-bottom: 2px solid saddlebrown; */
+  color: crimson;
+}
+
+.NavigationItem a :hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  /* background-color: darkgoldenrod; */
+  border-bottom: 2px solid #6d4008;
+  color: crimson;
+}
+
+@media (max-width: 900px) {
+  .NavigationItem {
+    padding: 2rem;
+  }
+}

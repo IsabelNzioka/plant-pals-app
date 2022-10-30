@@ -1,0 +1,63 @@
+.Navbar {
+  /* background-color: #134e4d; */
+  /* background-color: #43ab94; */
+  /* background-color: #05f4be; */
+  background-color: #2bb789;
+
+  height: 17vh;
+  /* font-size: 1.6rem; */
+  display: flex;
+  justify-content: space-between;
+}
+.MenuItems {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: rgb(114, 117, 119); */
+  align-items: center;
+}
+.Icons {
+  margin-left: 2rem;
+  margin-right: 1.8rem;
+  /* background-color: aliceblue; */
+}
+.Icon {
+  color: #b20600;
+  font-size: 1.4rem;
+  transition: all 1s;
+  padding-left: 0.3rem;
+}
+
+.Icon:hover {
+  color: aliceblue;
+}
+
+.Logo {
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  /* margin: 1rem; */
+  margin-left: 1.8rem;
+  /* color: crimson; */
+  /* margin-top: 1rem; */
+  /* background-color: yellow; */
+}
+
+@media (max-width: 900px) {
+  .DesktopOnly {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .Icon {
+    font-size: 1.2rem;
+  }
+  .Logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* 
+  color - 5800FF  171717  DA0037  00092C  B20600
+  
+  */

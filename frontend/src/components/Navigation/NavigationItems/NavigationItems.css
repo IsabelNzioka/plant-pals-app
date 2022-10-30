@@ -1,0 +1,18 @@
+.NavigationItems {
+  list-style: none;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+
+  padding: 2rem;
+  /* background-colsor: aliceblue; */
+  /* height: 100%; */
+}
+
+@media (max-width: 900px) {
+  .NavigationItems {
+    flex-direction: column;
+    padding: 4rem;
+  }
+}
