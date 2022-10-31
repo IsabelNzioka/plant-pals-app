@@ -9,7 +9,6 @@
 
 const plants = [
   {
-    _id: "1",
     name: "Peace Lily",
     image: [
       "/Images/INDOOR/peace-Lilies1.jpg",
@@ -26,13 +25,14 @@ const plants = [
     care: "medium to bright light; water moderately; fertilise occasionally during growing season.",
     price: 89,
     countInStock: 20,
+    rating: 3.5,
+
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "2",
     name: "Air Plant",
     image: ["/Images/INDOOR/air-plant.jpg"],
     category: "Indoor",
@@ -45,13 +45,13 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 120,
     countInStock: 20,
+    rating: 4.5,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "3",
     name: "Calathea",
     image: ["/Images/INDOOR/calathea1.jpg"],
     category: "Indoor",
@@ -64,13 +64,13 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 200,
     countInStock: 20,
+    rating: 3.7,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "4",
     name: "Monstera Deliosa",
     image: ["/Images/INDOOR/monstera-deliosa2.jpg"],
     category: "Indoor",
@@ -83,13 +83,13 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 120,
     countInStock: 20,
+    rating: 4.5,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "5",
     name: "String of Hearts",
     image: ["/Images/INDOOR/string-of-hearts1.jpg"],
     category: "Indoor",
@@ -102,13 +102,13 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 100,
     countInStock: 20,
+    rating: 4.5,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "6",
     name: "Jade Plant",
     image: ["/Images/INDOOR/jade-plant1.jpg"],
     category: "Indoor",
@@ -121,12 +121,12 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 300,
     countInStock: 20,
+    rating: 4.0,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
   {
-    _id: " 7",
     name: "Money Tree",
     image: ["/Images/INDOOR/money-tree1.jpg"],
     category: "Indoor",
@@ -139,12 +139,12 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 140,
     countInStock: 20,
+    rating: 4.2,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
   {
-    _id: "8",
     name: "Yucca",
     image: ["/Images/INDOOR/yucca.jpg"],
     category: "Indoor",
@@ -157,13 +157,13 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 100,
     countInStock: 20,
+    rating: 4.2,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
   },
 
   {
-    _id: "9",
     name: "ZZ Plant",
     image: ["/Images/INDOOR/zz-plant1.jpg"],
     category: "Indoor",
@@ -176,6 +176,7 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     price: 120,
     countInStock: 20,
+    rating: 4.0,
     numReviews: 100,
     difficulty: "no-fuss",
     size: "sm",
