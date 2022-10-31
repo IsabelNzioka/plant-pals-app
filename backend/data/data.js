@@ -189,6 +189,7 @@ const plants = [
 //prtfriendly
 //price - under 50$ 50$- 100 100-200 200 $ above
 
-// export default plants;
+export default plants;
 
-module.exports = plants;
+// module.exports = plants;
+// plantpal15
