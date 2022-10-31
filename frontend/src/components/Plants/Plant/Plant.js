@@ -1,11 +1,22 @@
-import React from "react";
-import plants from "../../../dev-data/data";
+import React, { useState, useEffect } from "react";
+// import plants from "../../../dev-data/data";
+import axios from "axios";
 
 import { Link } from "react-router-dom";
 
 import "./Plant.css";
 
 const Plant = () => {
+  const [plants, setPlants] = useState([]);
+
+  useEffect(() => {
+    const fetchPlants = async () => {
+      const { data } = await axios.get("/api/products");
+      setPlants(data);
+    };
+    fetchPlants();
+  }, []);
+
   return (
     <div className="Card">
       {plants.map((plant) => {
