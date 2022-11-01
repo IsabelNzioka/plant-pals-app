@@ -22,7 +22,7 @@ const Sliderr = (props) => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
-
+  console.log("props >>>>>>>>>>>>>>>>>>>", props);
   return (
     <div>
       <div className="Sliderr">

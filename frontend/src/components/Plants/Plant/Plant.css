@@ -84,3 +84,19 @@
     height: 160px;
   }
 }
+
+/* Loader */
+.sweet-loading {
+  margin: 15vh auto;
+  /* margin-top: 50vh; */
+}
+
+/* Error Message */
+.Message {
+  margin: 3rem;
+  padding: 2rem;
+  min-height: 8vh;
+  background-color: rgb(233, 207, 213);
+  border: 1px solid crimson;
+  width: 90vw;
+}
