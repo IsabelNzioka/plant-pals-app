@@ -9,12 +9,12 @@ const NavigationItems = () => {
     <div>
       <ul className="NavigationItems">
         <NavigationItem link="/">Plants</NavigationItem>
-        <NavigationItem link="/plants">Tools</NavigationItem>
+        <NavigationItem link="/products">Tools</NavigationItem>
         <NavigationItem link="/about">About</NavigationItem>
 
         <NavigationItem link="/blog">Blog</NavigationItem>
 
-        <NavigationItem link="/plants">Home</NavigationItem>
+        <NavigationItem link="/products">Home</NavigationItem>
       </ul>
     </div>
   );

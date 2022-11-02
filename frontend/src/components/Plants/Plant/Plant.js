@@ -35,7 +35,7 @@ const Plant = () => {
         products.map((plant) => {
           return (
             <div className="CardContent">
-              <Link to={`/plants/${plant._id}`} key={plant._id}>
+              <Link to={`/product/${plant._id}`} key={plant._id}>
                 <div className="CardImage">
                   <img
                     src={plant.image[0]}

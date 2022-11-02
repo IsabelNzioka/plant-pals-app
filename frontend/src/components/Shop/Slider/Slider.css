@@ -1,20 +1,61 @@
 .Sliderr {
-  width: 92%;
+  width: 50vw;
   height: 80vh;
   /* background-color: rgb(54, 96, 133); */
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .Slider {
-  width: 80%;
-
+  /* margin-left: 6rem; */
+  width: 90%;
+  /* display: block; */
+  /* background-color: crimson; */
   height: 80vh;
   /* border: 1px solid rgb(233, 221, 213); */
 
   /* z-index: 20; */
 }
+.Slide {
+  /* background-color: darkkhaki; */
+  width: 70%;
+  margin-left: 8rem;
+}
 img {
-  width: 100%;
+  width: 90%;
   height: 100%;
   border-radius: 1rem;
+  border: 1px solid rgb(134, 81, 81);
+}
+
+.custom-indicator {
+  width: 10%;
+
+  height: 60vh;
+  /* display: flex;
+  flex-direction: column; */
+  /* border: 2px solid slateblue; */
+  margin-left: -8rem;
+  /* bottom: -5rem; */
+}
+.custom-indicator li {
+  margin: 7px;
+  width: 50px;
+  height: 50px;
+  /* border: 1px solid saddlebrown; */
+}
+
+.custom-indicator li.slick-active img {
+  border: 2px solid rgb(24, 14, 14);
+}
+
+.SlideDots {
+  margin-top: -10rem;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  /* background-color: blueviolet; */
 }
 
 @media (max-width: 1200px) {
