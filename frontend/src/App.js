@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import Plants from "./components/Plants/Plants";
 import About from "./components/About/About";
 import PlantScreen from "./components/Shop/PlantScreen/PlantScreen";
+import CartScreen from "./components/Shop/CartScreen/CartScreen";
 
 import "./App.css";
 
@@ -14,6 +15,9 @@ const App = () => {
       <Route path="/" element={<Plants />} />
       {/* <Route path="/products" element={<Plants />} /> */}
       <Route path="/product/:id" element={<PlantScreen />} />
+      <Route path="/cart" element={<CartScreen />} />
+      <Route path="/cart/:id" element={<CartScreen />} />
+
       {/* <Route path="/products/:id" element={<PlantScreen />} /> */}
 
       <Route path="/about" element={<About />} />

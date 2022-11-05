@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 
 import { useDispatch, useSelector } from "react-redux";
-
-// import plants from "../../../dev-data/data";
 import { listProductDetails } from "../../../actions/productActions";
 
 import Loader from "../../Loader";
 import Message from "../../Message";
 import "./PlantScreen.css";
-
-// import axios from "axios";
-
 import Sliderr from "../Slider/Slider";
+
 const PlantScreen = () => {
+  const [qty, setQty] = useState(1);
+
   const params = useParams();
+  const navigate = useNavigate();
   // const plant = plants.find((p) => p._id === params.id);
   // const [plant, setPlant] = useState({});
 
@@ -24,14 +23,11 @@ const PlantScreen = () => {
 
   useEffect(() => {
     dispatch(listProductDetails(params.id));
-    // const fetchPlant = async () => {
-    //   const { data } = await axios.get(`/api/products/${params.id}`);
-    //   setPlant(data);
-    // };
-    // fetchPlant();
   }, [dispatch, params.id]);
 
-  console.log(">>>>>>>>>>>>>>>>>>", product.image);
+  const addToCartHandler = () => {
+    navigate(`/cart/${params.id} ? qty=${qty}`);
+  };
 
   return (
     <div className="Plant">
@@ -61,8 +57,31 @@ const PlantScreen = () => {
               <div className="two1"></div>
               <div className="three1"></div>
             </div>
-            <input type="text" placeholder="qty" />
-            <button className="Button">ADD TO CART</button>
+            <label for="qty-select">Qty</label>
+            <select
+              name="quantity"
+              id="qty-select"
+              className="Button"
+              onChange={(e) => setQty(e.target.value)}
+            >
+              {[...Array(product.countInStock).keys()].map((x) => (
+                <option key={x + 1} value={x + 1}>
+                  {x + 1}
+                </option>
+              ))}
+            </select>
+
+            {product.countInStock === 0 ? (
+              <button className="DisButton" disabled="true">
+                Out of stock
+              </button>
+            ) : (
+              <button className="Button" onClick={addToCartHandler}>
+                {" "}
+                ADD TO CART
+              </button>
+            )}
+
             <p>
               <strong>Care: </strong> {product.description}
             </p>

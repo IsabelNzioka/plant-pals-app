@@ -60,7 +60,7 @@ const Sliderr = (props) => {
       {product.image && (
         <Slider {...settings} className="Slide">
           {product.image.map((plant) => (
-            <div className="Slider">
+            <div className="Slider" key={plant.id}>
               <img src={plant} alt={plant} />
             </div>
           ))}

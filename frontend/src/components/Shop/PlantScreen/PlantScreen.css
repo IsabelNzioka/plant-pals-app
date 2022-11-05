@@ -41,7 +41,7 @@ h5 {
   align-items: center;
 }
 
-input,
+select,
 button {
   padding: 1rem 2rem;
   margin-left: 1rem;
@@ -53,6 +53,12 @@ button {
 button {
   background-color: black;
   color: aliceblue;
+  cursor: pointer;
+}
+
+.DisButton {
+  background-color: rgb(57, 58, 59);
+  cursor: none;
 }
 
 .Paragraph {

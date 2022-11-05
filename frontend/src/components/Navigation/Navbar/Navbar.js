@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import NavigationItems from "../NavigationItems/NavigationItems";
 import MenuToggle from "../SideDrawer/MenuToggle/MenuToggle";
@@ -12,7 +13,10 @@ const Navbar = (props) => {
   return (
     <div className="Navbar">
       <div className="Logo">
-        <h3>Plant Pals</h3>
+        <h3>
+          {" "}
+          <Link to={"/"}> Plant Pals</Link>
+        </h3>
       </div>
 
       <div className="MenuItems">
@@ -22,8 +26,11 @@ const Navbar = (props) => {
 
         <div className="Icons">
           <AiOutlineUser className="Icon" />
+          {/* <NavigationItem link="/products">Home</NavigationItem> */}
 
-          <AiOutlineShoppingCart className="Icon" />
+          <Link to={"/cart"}>
+            <AiOutlineShoppingCart className="Icon" />
+          </Link>
         </div>
         <MenuToggle clicked={props.menuBarClicked} />
       </div>

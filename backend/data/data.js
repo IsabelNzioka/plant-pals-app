@@ -24,7 +24,7 @@ const plants = [
     indoorLight: "direct", //light tolerance - low high
     care: "medium to bright light; water moderately; fertilise occasionally during growing season.",
     price: 89,
-    countInStock: 20,
+    countInStock: 100,
     rating: 3.5,
 
     numReviews: 100,
@@ -44,7 +44,7 @@ const plants = [
     growthRate: "Upto 2 feet",
     indoorLight: "direct", //light tolerance - low high
     price: 120,
-    countInStock: 20,
+    countInStock: 0,
     rating: 4.5,
     numReviews: 100,
     difficulty: "no-fuss",
@@ -63,7 +63,7 @@ const plants = [
     growthRate: "Upto 2 feet",
     indoorLight: "direct", //light tolerance - low high
     price: 200,
-    countInStock: 20,
+    countInStock: 12,
     rating: 3.7,
     numReviews: 100,
     difficulty: "no-fuss",
@@ -82,7 +82,7 @@ const plants = [
     growthRate: "Upto 2 feet",
     indoorLight: "direct", //light tolerance - low high
     price: 120,
-    countInStock: 20,
+    countInStock: 200,
     rating: 4.5,
     numReviews: 100,
     difficulty: "no-fuss",
