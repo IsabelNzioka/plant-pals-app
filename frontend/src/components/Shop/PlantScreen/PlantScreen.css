@@ -42,7 +42,7 @@ h5 {
 }
 
 select,
-button {
+.Button {
   padding: 1rem 2rem;
   margin-left: 1rem;
   margin: 1rem;
@@ -50,7 +50,7 @@ button {
   border-radius: 7px;
 }
 
-button {
+.Button {
   background-color: black;
   color: aliceblue;
   cursor: pointer;

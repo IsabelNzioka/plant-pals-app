@@ -57,7 +57,7 @@ const PlantScreen = () => {
               <div className="two1"></div>
               <div className="three1"></div>
             </div>
-            <label for="qty-select">Qty</label>
+            <label>Qty</label>
             <select
               name="quantity"
               id="qty-select"

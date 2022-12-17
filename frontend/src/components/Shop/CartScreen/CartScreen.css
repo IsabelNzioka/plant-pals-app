@@ -1,0 +1,55 @@
+.CartScreen {
+  /* margin: 5rem 2rem; */
+  /* background-color: darkgreen; */
+  min-height: 60vh;
+  background-color: rgb(231, 236, 221);
+  padding-top: 3rem;
+}
+
+.CartCard {
+  height: 20vh;
+  /* width: 90%; */
+  background-color: rgb(218, 221, 207);
+  padding: 1rem 6rem;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.CartImage {
+  height: 18vh;
+  width: 10%;
+}
+
+.CartImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.CartRemove {
+  padding: 3px 1rem;
+  background-color: rgb(33, 190, 196);
+  align-items: center;
+  font-stretch: normal;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid yellow;
+  /* display: inline-block; */
+}
+
+.CartTotal {
+  background-color: darkgrey;
+  padding: 1rem 6rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CartDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.CartDetails h2 {
+  padding-right: 8rem;
+}
