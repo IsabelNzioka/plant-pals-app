@@ -25,8 +25,10 @@ const Navbar = (props) => {
         </nav>
 
         <div className="Icons">
-          <AiOutlineUser className="Icon" />
           {/* <NavigationItem link="/products">Home</NavigationItem> */}
+          <Link to={"/login"}>
+            <AiOutlineUser className="Icon" />
+          </Link>
 
           <Link to={"/cart"}>
             <AiOutlineShoppingCart className="Icon" />

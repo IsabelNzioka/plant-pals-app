@@ -6,6 +6,7 @@ import Plants from "./components/Plants/Plants";
 import About from "./components/About/About";
 import PlantScreen from "./components/Shop/PlantScreen/PlantScreen";
 import CartScreen from "./components/Shop/CartScreen/CartScreen";
+import LoginScreen from "./components/Shop/LoginScreen/LoginScreen";
 
 import "./App.css";
 
@@ -13,7 +14,7 @@ const App = () => {
   const routes = (
     <Routes>
       <Route path="/" element={<Plants />} />
-      {/* <Route path="/products" element={<Plants />} /> */}
+      <Route path="/login" element={<LoginScreen />} />
       <Route path="/product/:id" element={<PlantScreen />} />
       <Route path="/cart" element={<CartScreen />} />
       <Route path="/cart/:id" element={<CartScreen />} />
