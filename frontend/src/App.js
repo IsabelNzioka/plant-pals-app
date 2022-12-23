@@ -7,6 +7,8 @@ import About from "./components/About/About";
 import PlantScreen from "./components/Shop/PlantScreen/PlantScreen";
 import CartScreen from "./components/Shop/CartScreen/CartScreen";
 import LoginScreen from "./components/Shop/LoginScreen/LoginScreen";
+import RegisterScreen from "./components/Shop/RegisterScreen/RegisterScreen";
+import ProfileScreen from "./components/Shop/ProfileScreen/ProfileScreen";
 
 import "./App.css";
 
@@ -15,6 +17,8 @@ const App = () => {
     <Routes>
       <Route path="/" element={<Plants />} />
       <Route path="/login" element={<LoginScreen />} />
+      <Route path="/register" element={<RegisterScreen />} />
+      <Route path="/profile" element={<ProfileScreen />} />
       <Route path="/product/:id" element={<PlantScreen />} />
       <Route path="/cart" element={<CartScreen />} />
       <Route path="/cart/:id" element={<CartScreen />} />
